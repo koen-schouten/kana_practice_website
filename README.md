@@ -1,4 +1,4 @@
-# kana_practice_website
+# Kana Practise website
 
 A simple website I made to practice the Japanese Kana.
 
