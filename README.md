@@ -2,7 +2,7 @@
 
 A simple website I made to practice the Japanese Kana.
 
-To use this website, go to [here](https://koen-schouten.github.io/kana_practice_website/index.html).
+To use this website, go [here](https://koen-schouten.github.io/kana_practice_website/index.html).
 
 You can download or clone the repo and use Python to start a simple webserver in the main directory:
 
