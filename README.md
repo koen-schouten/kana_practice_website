@@ -11,3 +11,5 @@ Use Python to start a simple webserver in the main directory:
 or
 
 > python3 -m http.server
+
+Audiofiles are from the Texas LAITS: Liberal Arts Instructional Technology Services 
