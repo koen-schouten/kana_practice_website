@@ -1,0 +1,614 @@
+{
+    "a": {
+        "romaji": "a",
+        "audio": "data/kana_sounds/a.mp3",
+        "hiragana": "\u3042",
+        "katakana": "\u30a2"
+    },
+    "i": {
+        "romaji": "i",
+        "audio": "data/kana_sounds/i.mp3",
+        "hiragana": "\u3044",
+        "katakana": "\u30a4"
+    },
+    "u": {
+        "romaji": "u",
+        "audio": "data/kana_sounds/u.mp3",
+        "hiragana": "\u3046",
+        "katakana": "\u30a6"
+    },
+    "e": {
+        "romaji": "e",
+        "audio": "data/kana_sounds/e.mp3",
+        "hiragana": "\u3048",
+        "katakana": "\u30a8"
+    },
+    "o": {
+        "romaji": "o",
+        "audio": "data/kana_sounds/o.mp3",
+        "hiragana": "\u304a",
+        "katakana": "\u30aa"
+    },
+    "ka": {
+        "romaji": "ka",
+        "audio": "data/kana_sounds/ka.mp3",
+        "hiragana": "\u304b",
+        "katakana": "\u30ab"
+    },
+    "ki": {
+        "romaji": "ki",
+        "audio": "data/kana_sounds/ki.mp3",
+        "hiragana": "\u304d",
+        "katakana": "\u30ad"
+    },
+    "ku": {
+        "romaji": "ku",
+        "audio": "data/kana_sounds/ku.mp3",
+        "hiragana": "\u304f",
+        "katakana": "\u30af"
+    },
+    "ke": {
+        "romaji": "ke",
+        "audio": "data/kana_sounds/ke.mp3",
+        "hiragana": "\u3051",
+        "katakana": "\u30b1"
+    },
+    "ko": {
+        "romaji": "ko",
+        "audio": "data/kana_sounds/ko.mp3",
+        "hiragana": "\u3053",
+        "katakana": "\u30b3"
+    },
+    "kya": {
+        "romaji": "kya",
+        "audio": "data/kana_sounds/kya.mp3",
+        "hiragana": "\u304d\u3083",
+        "katakana": "\u304d\u3083"
+    },
+    "kyu": {
+        "romaji": "kyu",
+        "audio": "data/kana_sounds/kyu.mp3",
+        "hiragana": "\u304d\u3085",
+        "katakana": "\u30ad\u30e5"
+    },
+    "kyo": {
+        "romaji": "kyo",
+        "audio": "data/kana_sounds/kyo.mp3",
+        "hiragana": "\u304d\u3087",
+        "katakana": "\u30ad\u30e7"
+    },
+    "sa": {
+        "romaji": "sa",
+        "audio": "data/kana_sounds/sa.mp3",
+        "hiragana": "\u3055",
+        "katakana": "\u30b5"
+    },
+    "shi": {
+        "romaji": "shi",
+        "audio": "data/kana_sounds/shi.mp3",
+        "hiragana": "\u3057",
+        "katakana": "\u30b7"
+    },
+    "su": {
+        "romaji": "su",
+        "audio": "data/kana_sounds/su.mp3",
+        "hiragana": "\u3059",
+        "katakana": "\u30b9"
+    },
+    "se": {
+        "romaji": "se",
+        "audio": "data/kana_sounds/se.mp3",
+        "hiragana": "\u305b",
+        "katakana": "\u30bb"
+    },
+    "so": {
+        "romaji": "so",
+        "audio": "data/kana_sounds/so.mp3",
+        "hiragana": "\u305d",
+        "katakana": "\u30bd"
+    },
+    "sha": {
+        "romaji": "sha",
+        "audio": "data/kana_sounds/sha.mp3",
+        "hiragana": "\u3057\u3083",
+        "katakana": "\u30b7\u30e3"
+    },
+    "shu": {
+        "romaji": "shu",
+        "audio": "data/kana_sounds/shu.mp3",
+        "hiragana": "\u3057\u3085",
+        "katakana": "\u30b7\u30e5"
+    },
+    "sho": {
+        "romaji": "sho",
+        "audio": "data/kana_sounds/sho.mp3",
+        "hiragana": "\u3057\u3087",
+        "katakana": "\u30b7\u30e7"
+    },
+    "ta": {
+        "romaji": "ta",
+        "audio": "data/kana_sounds/ta.mp3",
+        "hiragana": "\u305f",
+        "katakana": "\u30bf"
+    },
+    "chi": {
+        "romaji": "chi",
+        "audio": "data/kana_sounds/chi.mp3",
+        "hiragana": "\u3061",
+        "katakana": "\u30c1"
+    },
+    "tsu": {
+        "romaji": "tsu",
+        "audio": "data/kana_sounds/tsu.mp3",
+        "hiragana": "\u3064",
+        "katakana": "\u30c4"
+    },
+    "te": {
+        "romaji": "te",
+        "audio": "data/kana_sounds/te.mp3",
+        "hiragana": "\u3066",
+        "katakana": "\u30c6"
+    },
+    "to": {
+        "romaji": "to",
+        "audio": "data/kana_sounds/to.mp3",
+        "hiragana": "\u3068",
+        "katakana": "\u30c8"
+    },
+    "cha": {
+        "romaji": "cha",
+        "audio": "data/kana_sounds/cha.mp3",
+        "hiragana": "\u3061\u3083",
+        "katakana": "\u30c1\u30e3"
+    },
+    "chu": {
+        "romaji": "chu",
+        "audio": "data/kana_sounds/chu.mp3",
+        "hiragana": "\u3061\u3085",
+        "katakana": "\u30c1\u30e5"
+    },
+    "cho": {
+        "romaji": "cho",
+        "audio": "data/kana_sounds/cho.mp3",
+        "hiragana": "\u3061\u3087",
+        "katakana": "\u30c1\u30e7"
+    },
+    "na": {
+        "romaji": "na",
+        "audio": "data/kana_sounds/na.mp3",
+        "hiragana": "\u306a",
+        "katakana": "\u30ca"
+    },
+    "ni": {
+        "romaji": "ni",
+        "audio": "data/kana_sounds/ni.mp3",
+        "hiragana": "\u306b",
+        "katakana": "\u30cb"
+    },
+    "nu": {
+        "romaji": "nu",
+        "audio": "data/kana_sounds/nu.mp3",
+        "hiragana": "\u306c",
+        "katakana": "\u30cc"
+    },
+    "ne": {
+        "romaji": "ne",
+        "audio": "data/kana_sounds/ne.mp3",
+        "hiragana": "\u306d",
+        "katakana": "\u30cd"
+    },
+    "no": {
+        "romaji": "no",
+        "audio": "data/kana_sounds/no.mp3",
+        "hiragana": "\u306e",
+        "katakana": "\u30ce"
+    },
+    "nya": {
+        "romaji": "nya",
+        "audio": "data/kana_sounds/nya.mp3",
+        "hiragana": "\u306b\u3083",
+        "katakana": "\u30cb\u30e3"
+    },
+    "nyu": {
+        "romaji": "nyu",
+        "audio": "data/kana_sounds/nyu.mp3",
+        "hiragana": "\u306b\u3085",
+        "katakana": "\u30cb\u30e5"
+    },
+    "nyo": {
+        "romaji": "nyo",
+        "audio": "data/kana_sounds/nyo.mp3",
+        "hiragana": "\u306b\u3087",
+        "katakana": "\u30cb\u30e7"
+    },
+    "ha": {
+        "romaji": "ha",
+        "audio": "data/kana_sounds/ha.mp3",
+        "hiragana": "\u306f",
+        "katakana": "\u30cf"
+    },
+    "hi": {
+        "romaji": "hi",
+        "audio": "data/kana_sounds/hi.mp3",
+        "hiragana": "\u3072",
+        "katakana": "\u30d2"
+    },
+    "hu_fu": {
+        "romaji": "fu",
+        "audio": "data/kana_sounds/hu_fu.mp3",
+        "hiragana": "\u3075",
+        "katakana": "\u30d5"
+    },
+    "he": {
+        "romaji": "he",
+        "audio": "data/kana_sounds/he.mp3",
+        "hiragana": "\u3078",
+        "katakana": "\u30d8"
+    },
+    "ho": {
+        "romaji": "ho",
+        "audio": "data/kana_sounds/ho.mp3",
+        "hiragana": "\u307b",
+        "katakana": "\u30db"
+    },
+    "hya": {
+        "romaji": "hya",
+        "audio": "data/kana_sounds/hya.mp3",
+        "hiragana": "\u3072\u3083",
+        "katakana": "\u30d2\u30e3"
+    },
+    "hyu": {
+        "romaji": "hyu",
+        "audio": "data/kana_sounds/hyu.mp3",
+        "hiragana": "\u3072\u3085",
+        "katakana": "\u30d2\u30e5"
+    },
+    "hyo": {
+        "romaji": "hyo",
+        "audio": "data/kana_sounds/hyo.mp3",
+        "hiragana": "\u3072\u3087",
+        "katakana": "\u30d2\u30e7"
+    },
+    "ma": {
+        "romaji": "ma",
+        "audio": "data/kana_sounds/ma.mp3",
+        "hiragana": "\u307e",
+        "katakana": "\u30de"
+    },
+    "mi": {
+        "romaji": "mi",
+        "audio": "data/kana_sounds/mi.mp3",
+        "hiragana": "\u307f",
+        "katakana": "\u30df"
+    },
+    "mu": {
+        "romaji": "mu",
+        "audio": "data/kana_sounds/mu.mp3",
+        "hiragana": "\u3080",
+        "katakana": "\u30e0"
+    },
+    "me": {
+        "romaji": "me",
+        "audio": "data/kana_sounds/me.mp3",
+        "hiragana": "\u3081",
+        "katakana": "\u30e1"
+    },
+    "mo": {
+        "romaji": "mo",
+        "audio": "data/kana_sounds/mo.mp3",
+        "hiragana": "\u3082",
+        "katakana": "\u30e2"
+    },
+    "mya": {
+        "romaji": "mya",
+        "audio": "data/kana_sounds/mya.mp3",
+        "hiragana": "\u307f\u3083",
+        "katakana": "\u30df\u30e3"
+    },
+    "myu": {
+        "romaji": "myu",
+        "audio": "data/kana_sounds/myu.mp3",
+        "hiragana": "\u307f\u3085",
+        "katakana": "\u30df\u30e5"
+    },
+    "myo": {
+        "romaji": "myo",
+        "audio": "data/kana_sounds/myo.mp3",
+        "hiragana": "\u307f\u3087",
+        "katakana": "\u30df\u30e7"
+    },
+    "ya": {
+        "romaji": "ya",
+        "audio": "data/kana_sounds/ya.mp3",
+        "hiragana": "\u3084",
+        "katakana": "\u30e4"
+    },
+    "yu": {
+        "romaji": "yu",
+        "audio": "data/kana_sounds/yu.mp3",
+        "hiragana": "\u3086",
+        "katakana": "\u30e6"
+    },
+    "yo": {
+        "romaji": "yo",
+        "audio": "data/kana_sounds/yo.mp3",
+        "hiragana": "\u3088",
+        "katakana": "\u30e8"
+    },
+    "ra": {
+        "romaji": "ra",
+        "audio": "data/kana_sounds/ra.mp3",
+        "hiragana": "\u3089",
+        "katakana": "\u30e9"
+    },
+    "ri": {
+        "romaji": "ri",
+        "audio": "data/kana_sounds/ri.mp3",
+        "hiragana": "\u308a",
+        "katakana": "\u30ea"
+    },
+    "ru": {
+        "romaji": "ru",
+        "audio": "data/kana_sounds/ru.mp3",
+        "hiragana": "\u308b",
+        "katakana": "\u30eb"
+    },
+    "re": {
+        "romaji": "re",
+        "audio": "data/kana_sounds/re.mp3",
+        "hiragana": "\u308c",
+        "katakana": "\u30ec"
+    },
+    "ro": {
+        "romaji": "ro",
+        "audio": "data/kana_sounds/ro.mp3",
+        "hiragana": "\u308d",
+        "katakana": "\u30ed"
+    },
+    "rya": {
+        "romaji": "rya",
+        "audio": "data/kana_sounds/rya.mp3",
+        "hiragana": "\u308a\u3083",
+        "katakana": "\u30ea\u30e3"
+    },
+    "ryu": {
+        "romaji": "ryu",
+        "audio": "data/kana_sounds/ryu.mp3",
+        "hiragana": "\u308a\u3085",
+        "katakana": "\u30ea\u30e5"
+    },
+    "ryo": {
+        "romaji": "ryo",
+        "audio": "data/kana_sounds/ryo.mp3",
+        "hiragana": "\u308a\u3087",
+        "katakana": "\u30ea\u30e7"
+    },
+    "wa": {
+        "romaji": "wa",
+        "audio": "data/kana_sounds/wa.mp3",
+        "hiragana": "\u308f",
+        "katakana": "\u30ef"
+    },
+    "wo_o": {
+        "romaji": "wo_o",
+        "audio": "data/kana_sounds/wo_o.mp3",
+        "hiragana": "\u3092",
+        "katakana": "\u30f2"
+    },
+    "n": {
+        "romaji": "n",
+        "audio": "data/kana_sounds/n.mp3",
+        "hiragana": "\u3093",
+        "katakana": "\u30f3"
+    },
+    "ga": {
+        "romaji": "ga",
+        "audio": "data/kana_sounds/ga.mp3",
+        "hiragana": "\u304c",
+        "katakana": "\u30ac"
+    },
+    "gi": {
+        "romaji": "gi",
+        "audio": "data/kana_sounds/gi.mp3",
+        "hiragana": "\u304e",
+        "katakana": "\u30ae"
+    },
+    "gu": {
+        "romaji": "gu",
+        "audio": "data/kana_sounds/gu.mp3",
+        "hiragana": "\u3050",
+        "katakana": "\u30b0"
+    },
+    "ge": {
+        "romaji": "ge",
+        "audio": "data/kana_sounds/ge.mp3",
+        "hiragana": "\u3052",
+        "katakana": "\u30b2"
+    },
+    "go": {
+        "romaji": "go",
+        "audio": "data/kana_sounds/go.mp3",
+        "hiragana": "\u3054",
+        "katakana": "\u30b4"
+    },
+    "gya": {
+        "romaji": "gya",
+        "audio": "data/kana_sounds/gya.mp3",
+        "hiragana": "\u304e\u3083",
+        "katakana": "\u30ae\u30e3"
+    },
+    "gyu": {
+        "romaji": "gyu",
+        "audio": "data/kana_sounds/gyu.mp3",
+        "hiragana": "\u304e\u3085",
+        "katakana": "\u30ae\u30e5"
+    },
+    "gyo": {
+        "romaji": "gyo",
+        "audio": "data/kana_sounds/gyo.mp3",
+        "hiragana": "\u304e\u3087",
+        "katakana": "\u30ae\u30e7"
+    },
+    "za": {
+        "romaji": "za",
+        "audio": "data/kana_sounds/za.mp3",
+        "hiragana": "\u3056",
+        "katakana": "\u30b6"
+    },
+    "ji": {
+        "romaji": "ji",
+        "audio": "data/kana_sounds/ji.mp3",
+        "hiragana": "\u3058",
+        "katakana": "\u30b8"
+    },
+    "zu": {
+        "romaji": "zu",
+        "audio": "data/kana_sounds/zu.mp3",
+        "hiragana": "\u305a",
+        "katakana": "\u30ba"
+    },
+    "ze": {
+        "romaji": "ze",
+        "audio": "data/kana_sounds/ze.mp3",
+        "hiragana": "\u305c",
+        "katakana": "\u30bc"
+    },
+    "zo": {
+        "romaji": "zo",
+        "audio": "data/kana_sounds/zo.mp3",
+        "hiragana": "\u305e",
+        "katakana": "\u30be"
+    },
+    "ja": {
+        "romaji": "ja",
+        "audio": "data/kana_sounds/ja.mp3",
+        "hiragana": "\u3058\u3083",
+        "katakana": "\u30b8\u30e3"
+    },
+    "ju": {
+        "romaji": "ju",
+        "audio": "data/kana_sounds/ju.mp3",
+        "hiragana": "\u3058\u3085",
+        "katakana": "\u30b8\u30e5"
+    },
+    "jo": {
+        "romaji": "jo",
+        "audio": "data/kana_sounds/jo.mp3",
+        "hiragana": "\u3058\u3087",
+        "katakana": "\u30b8\u30e7"
+    },
+    "da": {
+        "romaji": "da",
+        "audio": "data/kana_sounds/da.mp3",
+        "hiragana": "\u3060",
+        "katakana": "\u30c0"
+    },
+    "de": {
+        "romaji": "de",
+        "audio": "data/kana_sounds/de.mp3",
+        "hiragana": "\u3067",
+        "katakana": "\u30c7"
+    },
+    "do": {
+        "romaji": "do",
+        "audio": "data/kana_sounds/do.mp3",
+        "hiragana": "\u3069",
+        "katakana": "\u30c9"
+    },
+    "ba": {
+        "romaji": "ba",
+        "audio": "data/kana_sounds/ba.mp3",
+        "hiragana": "\u3070",
+        "katakana": "\u30d0"
+    },
+    "bi": {
+        "romaji": "bi",
+        "audio": "data/kana_sounds/bi.mp3",
+        "hiragana": "\u3073",
+        "katakana": "\u30d3"
+    },
+    "bu": {
+        "romaji": "bu",
+        "audio": "data/kana_sounds/bu.mp3",
+        "hiragana": "\u3076",
+        "katakana": "\u30d6"
+    },
+    "be": {
+        "romaji": "be",
+        "audio": "data/kana_sounds/be.mp3",
+        "hiragana": "\u3079",
+        "katakana": "\u30d9"
+    },
+    "bo": {
+        "romaji": "bo",
+        "audio": "data/kana_sounds/bo.mp3",
+        "hiragana": "\u307c",
+        "katakana": "\u30dc"
+    },
+    "bya": {
+        "romaji": "bya",
+        "audio": "data/kana_sounds/bya.mp3",
+        "hiragana": "\u3073\u3083",
+        "katakana": "\u30d3\u30e3"
+    },
+    "byu": {
+        "romaji": "byu",
+        "audio": "data/kana_sounds/byu.mp3",
+        "hiragana": "\u3073\u3085",
+        "katakana": "\u30d3\u30e5"
+    },
+    "byo": {
+        "romaji": "byo",
+        "audio": "data/kana_sounds/byo.mp3",
+        "hiragana": "\u3073\u3087",
+        "katakana": "\u30d3\u30e7"
+    },
+    "pa": {
+        "romaji": "pa",
+        "audio": "data/kana_sounds/pa.mp3",
+        "hiragana": "\u3071",
+        "katakana": "\u30d1"
+    },
+    "pi": {
+        "romaji": "pi",
+        "audio": "data/kana_sounds/pi.mp3",
+        "hiragana": "\u3074",
+        "katakana": "\u30d4"
+    },
+    "pu": {
+        "romaji": "pu",
+        "audio": "data/kana_sounds/pu.mp3",
+        "hiragana": "\u3077",
+        "katakana": "\u30d7"
+    },
+    "pe": {
+        "romaji": "pe",
+        "audio": "data/kana_sounds/pe.mp3",
+        "hiragana": "\u307a",
+        "katakana": "\u30da"
+    },
+    "po": {
+        "romaji": "po",
+        "audio": "data/kana_sounds/po.mp3",
+        "hiragana": "\u307d",
+        "katakana": "\u30dd"
+    },
+    "pya": {
+        "romaji": "pya",
+        "audio": "data/kana_sounds/pya.mp3",
+        "hiragana": "\u3074\u3083",
+        "katakana": "\u30d4\u30e3"
+    },
+    "pyu": {
+        "romaji": "pyu",
+        "audio": "data/kana_sounds/pyu.mp3",
+        "hiragana": "\u3074\u3085",
+        "katakana": "\u30d4\u30e5"
+    },
+    "pyo": {
+        "romaji": "pyo",
+        "audio": "data/kana_sounds/pyo.mp3",
+        "hiragana": "\u3074\u3087",
+        "katakana": "\u30d4\u30e7"
+    }
+}

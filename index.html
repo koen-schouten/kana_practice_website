@@ -1,0 +1,216 @@
+<!Doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <script type="text/javascript" language="javascript" src="src/js/JSONParser.js"></script>
+    <script type="text/javascript" language="javascript" src="src/js/AudioManager.js"></script>
+    <script type="text/javascript" language="javascript" src="src/js/KanaQuiz.js"></script>
+    <script type="text/javascript" language="javascript" src="src/js/Question.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.0.2/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="quiz-setup">
+            <form class="form" v-bind:class="{ inactive: !isActive }">
+                <label>From:</label>
+                <select v-model="selected_question_type">
+                    <option v-for="question_type in possible_questions" :value="question_type.value">
+                        {{ question_type.text }}
+                    </option>
+                </select>
+                <label>To:</label>
+                <select v-model="selected_answer_type">
+                    <option v-for="answer_type in possible_answers" :value="answer_type.value">
+                        {{ answer_type.text }}
+                    </option>
+                </select>
+                <label>Number of Questions:</label>
+                <input v-model="questionAmount" min="1" type='number'>
+                <label>Number of Answers per Questions:</label>
+                <input v-model="answerAmount" min="1" max="50" type='number'>
+                <button type="button" v-on:click="startQuiz">Start Quiz</button>
+            </form>
+        </div>
+
+        <div id="quiz">
+            
+        </div>
+    </div>
+
+
+    <script type="text/javascript" language="javascript">
+        let quiz;
+
+        const quizSetupApp = {
+            data() {
+                return {
+                    quizMounted: false,
+                    isActive: true,
+                    possible_questions: [],
+                    possible_answers: [],
+                    selected_question_type: KanaQuiz.POSSIBLE_QUESTIONS[0],
+                    selected_answer_type: KanaQuiz.POSSIBLE_ANSWERS[0],
+                    answerAmount: KanaQuiz.DEFAULT_ANSWERAMOUNT,
+                    questionAmount: KanaQuiz.DEFAULT_QUESTIONAMOUNT,
+
+                }
+            },
+            created() {
+                for (question of KanaQuiz.POSSIBLE_QUESTIONS) {
+                    this.possible_questions.push({value: question, text: question })
+                }
+                for (question of KanaQuiz.POSSIBLE_ANSWERS) {
+                    this.possible_answers.push({value: question, text: question })
+                }
+            },
+            methods:{
+                startQuiz(){
+                    if(!this.formValid()){
+                        return;
+                    }
+                    KanaQuiz.createNewQuiz(this.questionAmount, 
+                        this.selected_question_type, 
+                        this.selected_answer_type, 
+                        this.answerAmount);
+                    if(this.quizMounted == false){
+                        this.quizMounted = true;
+                        quiz = quizApp.mount("#quiz");
+                    }else{
+                        quiz.updateQuiz();
+                    }
+                    this.isActive = false;
+                },
+                setActive(){
+                    this.isActive = true;
+                },
+                formValid(){
+                    if(this.answerAmount < 1 || this.questionAmount < 1 || this.answerAmount > 50){
+                        return false;
+                    }else{
+                        return true;
+                    }
+                }
+
+
+            }
+        }
+
+        let quizSetup = Vue.createApp(quizSetupApp).mount('#quiz-setup')
+ 
+        const quizApp = Vue.createApp({
+            data(){
+                return{
+                    quizActive: false,
+                    showResults: false,
+                    questionList: [""],
+                    questionAmount: 0,
+                    currentQuestionNumber:0,
+                    mistakeCount:0,
+                    questionRightCount:0,
+                }
+            },
+            mounted() {
+                this.updateQuiz();
+            },
+            methods:{
+                updateQuiz(){
+                    this.updateMistakeCount();
+                    this.quizActive = KanaQuiz.getQuizActive();
+                    this.questionAmount = KanaQuiz.getQuestionAmount();
+                    this.currentQuestionNumber = KanaQuiz.getCurrentQuestionNumber();
+                    this.questionList = KanaQuiz.getQuestionList();
+                    this.playAudio();
+                },
+
+                getCurrentQuestion(){
+                    return this.questionList[this.currentQuestionNumber];
+                },
+
+                updateMistakeCount(){
+                    this.mistakeCount = KanaQuiz.getMistakeCount();
+                },
+
+
+                playAudio(){
+                    if(this.quizActive && this.questionList[this.currentQuestionNumber].questionType == KanaQuiz.QUIZTYPES.AUDIO){
+                        audioManager.playTrack(this.questionList[this.currentQuestionNumber].question);
+                    }
+                },
+                answerSelected(selectedAnswer){
+                    let answerRight = KanaQuiz.selectAnswer(selectedAnswer);
+                    let answer = this.questionList[this.currentQuestionNumber].answers.find(e => e.text == selectedAnswer);
+                    answer.selected = true;
+                    this.updateMistakeCount();
+                    
+                    if(answerRight){
+                        this.updateQuiz();
+                    }
+                    if(!this.quizActive){
+                        this.showResults = true
+                    }
+                },
+
+                gotoQuizSetup(){
+                    this.quizActive = false;
+                    this.showResults = false;
+                    quizSetup.setActive()
+                }
+
+
+            },
+            template:`
+                <div v-bind:class="{ inactive: !quizActive }">
+                    <span>Question:{{ currentQuestionNumber + 1 }}/{{ questionAmount + 1 }} Mistakes:{{ mistakeCount }}</span>
+                    
+                    <div v-if=" questionList[currentQuestionNumber].questionType != 'audio' ">
+                        <h2>{{ questionList[currentQuestionNumber].question }} </h2>
+                    </div>
+
+                    <div v-else>
+                        <button v-on:click="playAudio()" class="audioButton">
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="20px" height="20px" viewBox="0 0 75 75">
+                                <path d="M39.389,13.769 L22.235,28.606 L6,28.606 L6,47.699 L21.989,47.699 L39.389,62.75 L39.389,13.769z" style="stroke:#fff;stroke-width:5;stroke-linejoin:round;fill:#fff;"/>
+                                <path d="M48,27.6a19.5,19.5 0 0 1 0,21.4M55.1,20.5a30,30 0 0 1 0,35.6M61.6,14a38.8,38.8 0 0 1 0,48.6" style="fill:none;stroke:#fff;stroke-width:5;stroke-linecap:round"/>
+                                </svg>
+                        </button>
+                    </div>
+
+                    <span>Select an option:</span>
+                    <div class="answer-list" id="quiz-answers"  v-for="answer in questionList[currentQuestionNumber].answers">
+                        <button type="button" v-on:click="answerSelected(answer.text)" :class="{ shake : answer.selected, mistake: answer.selected }">
+                        {{ answer.text }}
+                        </button>
+                    </div>
+
+
+                </div>
+
+                <diV v-bind:class="{ inactive: !showResults }">
+                    <h2>Results:</h2>
+                    <p v-if="mistakeCount == 1">You made {{ mistakeCount }} mistake out of {{ questionAmount + 1 }} questions.</p>
+                    <p v-else>You made {{ mistakeCount }} mistakes out of {{ questionAmount + 1 }} questions.</p>
+                    
+                    
+                    <h3 v-if="mistakeCount > 0">Mistakes:</h3>
+                    <div class="answer-list" id="quiz-answers"  v-for="question in questionList">
+                        <button class="mistake" v-if="question.mistakeCount != 0">{{ question.rightAnswer }}</button>
+                    </div>
+
+                    <button v-on:click="gotoQuizSetup">Start New Quiz</button>
+
+                </div>
+                `
+        });
+
+
+        
+
+    </script>
+</body>
+
+</html>
